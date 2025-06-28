@@ -1,6 +1,6 @@
 [project]
 name = "pdf2seg"
-version = "1.0.0"
+version = "1.0.1"
 description = "Tokenization-free PDF segmentation using OCR and spaCy span-aware chunking"
 readme = "README.md"
 requires-python = ">=3.11"

@@ -41,11 +41,11 @@ pdf2seg -i paper.pdf -o data/
 📁 Output:
 ```
 data/
-└── <hash>/
-    ├── <hash>-p000.png     ← rendered page
-    ├── <hash>-p000.txt     ← OCR result
-    ├── <hash>.csv          ← segmented spans
-    └── <hash>.json         ← processing manifest
+|── <hash>/
+|   |── <hash>-p000.png  ← rendered page
+|   |── <hash>-p000.txt  ← OCR result
+|   |── <hash>.json      ← processing manifest
+|── <hash>.csv           ← segmented spans
 ```
 
 ---
@@ -75,7 +75,7 @@ You can inspect the span cutoff logic, filters, or tweak the entropy mode in `__
 
 ## 🔖 License
 
-MIT License © 2025 Kara Rawson  
+MIT License © 2025 Rawson, Kara  
 Project: [p3nGu1nZz/pdf2seg](https://github.com/p3nGu1nZz/pdf2seg)
 
 ---
@@ -84,10 +84,10 @@ If you use or reference this software in an academic publication or project, ple
 
 ```bibtex
 @software{rawson2025pdf2seg,
-  author       = {Kara Rawson},
+  author       = {Rawson, Kara},
   title        = {pdf2seg: Tokenizer-Free PDF Segmentation with OCR and Span-Aware Chunking},
   year         = {2025},
-  version      = {1.0.0},
+  version      = {1.0.1},
   url          = {https://github.com/p3nGu1nZz/pdf2seg},
   note         = {Python package available at PyPI: https://pypi.org/project/pdf2seg/}
 }
@@ -98,4 +98,4 @@ If you use or reference this software in an academic publication or project, ple
 ## 👁 See Also
 
 - [X-Spanformer: Tokenizer-Free Span Induction with Structural Fusion](https://zenodo.org/records/15750962)  
-- [oxbar](https://github.com/p3nGu1nZz/ox-bar): Compile structured span labels with local LLMs
+- [oxbar](https://github.com/p3nGu1nZz/oxbar): Compile structured span labels with local LLMs
