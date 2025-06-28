@@ -1,7 +1,46 @@
 [project]
 name = "pdf2seg"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "Tokenization-free PDF segmentation using OCR and spaCy span-aware chunking"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+license = { text = "MIT" }
+authors = [
+  { name = "Kara Rawson", email = "rawsonkara@gmail.com" }
+]
+keywords = [
+  "PDF", "OCR", "tokenization-free", "text segmentation", "NLP",
+  "easyocr", "spacy", "preprocessing", "language models", "pointer network"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+  "easyocr>=1.7.2",
+  "numpy>=2.3.1",
+  "pdf2image>=1.17.0",
+  "pillow>=11.2.1",
+  "pip>=25.1.1",
+  "rich>=14.0.0",
+  "spacy>=3.8.7",
+  "torch>=2.7.1",
+  "torchvision>=0.22.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/p3nGu1nZz/pdf2seg"
+Repository = "https://github.com/p3nGu1nZz/pdf2seg"
+Issues = "https://github.com/p3nGu1nZz/pdf2seg/issues"
+
+[project.scripts]
+pdf2seg = "pdf2seg.__main__:main"
+
+[build-system]
+requires = ["uv", "setuptools", "wheel", "pip"]
+build-backend = "setuptools.build_meta"
